@@ -1,6 +1,8 @@
 import postgres from "postgres";
 import Link from "next/link";
 
+const sql = postgres(process.env.DATABASE_URL!);
+
 export default function Home() {
   return (
     <section>
